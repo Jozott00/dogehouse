@@ -32,8 +32,8 @@ export const RoomSettingsModal: React.FC<RoomSettingsModalProps> = ({
       {!data || "error" in data ? (
         <InfoText>something went wrong</InfoText>
       ) : (
-        <div className={`flex-col w-full`}>
-          <label className={`flex items-center my-8`} htmlFor="auto-speaker">
+        <div className={`flex flex-col w-full`}>
+          <label className={`flex items-center my-1`} htmlFor="auto-speaker">
             <input
               checked={!data.autoSpeaker}
               onChange={(e) => {
